@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim | KodAksiyon Bilişim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+  <meta name="theme-color" content="#2C3E50" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="KodAksiyon Logo" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Hizmetler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">İletişim</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-outline-secondary ms-3" title="Tema Değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header py-5 text-white text-center">
+    <div class="container position-relative z-index-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Bizimle İletişime Geçin</h1>
+          <p class="lead">Sorularınız, projeleriniz veya iş birliği talepleriniz için bize ulaşın.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center mb-5">
+            <span class="badge bg-primary-soft mb-2">İletişim</span>
+            <h2 class="display-5 fw-bold">Bizimle İletişime Geçin</h2>
+            <p class="lead text-muted">Projeniz için en iyi çözümleri sunalım</p>
+          </div>
+          <div class="card border-0 shadow-lg overflow-hidden">
+            <div class="row g-0">
+              <div class="col-lg-5 bg-primary text-white p-4 d-flex align-items-center">
+                <div class="contact-info w-100">
+                  <h5 class="mb-4 text-white">İletişim Bilgileri</h5>
+                  <div class="d-flex align-items-start mb-4">
+                    <div class="contact-icon flex-shrink-0 me-3">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1 text-white">Adres</h6>
+                      <p class="mb-0 text-white-50">Alsancak Mah. Kıbrıs Şehitleri Cad. No:123</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-4">
+                    <div class="contact-icon flex-shrink-0 me-3">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1 text-white">Telefon</h6>
+                      <p class="mb-0 text-white-50">(0232) 123 45 67</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-4">
+                    <div class="contact-icon flex-shrink-0 me-3">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1 text-white">E-posta</h6>
+                      <p class="mb-0 text-white-50">info@kodaksiyon.com</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <div class="contact-icon flex-shrink-0 me-3">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1 text-white">Çalışma Saatleri</h6>
+                      <p class="mb-0 text-white-50">Pazartesi - Cuma: 09:00 - 18:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body p-5">
+                  <form id="contactForm">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="name" placeholder="Adınız" required>
+                          <label for="name">Adınız</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="email" placeholder="E-posta" required>
+                          <label for="email">E-posta</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="subject" placeholder="Konu" required>
+                          <label for="subject">Konu</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea class="form-control" id="message" placeholder="Mesajınız" style="height: 150px" required></textarea>
+                          <label for="message">Mesajınız</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Gönder</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft mb-2">Konumumuz</span>
+        <h2 class="display-5 fw-bold">Bizi Ziyaret Edin</h2>
+        <p class="lead text-muted">Harita üzerinde konumumuzu görebilirsiniz</p>
+      </div>
+      <div class="map-container rounded shadow-lg overflow-hidden" style="height: 450px;">
+        <!-- Replace with your actual map embed code -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.59166620235!2d27.14190351538799!3d38.432215979646655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd88e3491e3a1%3A0xcf1b6765a7c192e!2sAlsancak%2C%20K%C4%B1br%C4%B1s%20%C5%9Eehitleri%20Cd.%20No%3A123%2C%2035220%20Konak%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1678900000000!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="KodAksiyon Logo" height="40" class="mb-3">
+            <h5 class="text-white mb-3">KodAksiyon Bilişim</h5>
+            <p class="text-white-50">Dijital dönüşüm ortağınız olarak, işletmenizi geleceğe taşıyoruz.</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="text-white mb-4">Hızlı Erişim</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html#about">Hakkımızda</a></li>
+            <li><a href="services.html">Hizmetlerimiz</a></li>
+            <li><a href="index.html#why-us">Neden Biz?</a></li>
+            <li><a href="index.html#testimonials">Referanslar</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="text-white mb-4">İletişim</h5>
+          <ul class="list-unstyled footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Alsancak Mah. Kıbrıs Şehitleri Cad. No:123</li>
+            <li><i class="fas fa-phone"></i> (0232) 123 45 67</li>
+            <li><i class="fas fa-envelope"></i> info@kodaksiyon.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="text-white mb-4">Çalışma Saatleri</h5>
+          <ul class="list-unstyled footer-hours">
+            <li>Pazartesi - Cuma: 09:00 - 18:00</li>
+            <li>Cumartesi: 10:00 - 14:00</li>
+            <li>Pazar: Kapalı</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0 text-white-50">© 2024 KodAksiyon Bilişim. Tüm hakları saklıdır.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-white-50 text-decoration-none me-3">Gizlilik Politikası</a>
+          <a href="#" class="text-white-50 text-decoration-none">Kullanım Şartları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tema geçişi
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    function setTheme(dark) {
+      if (dark) {
+        body.classList.add('dark-theme');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-theme');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    setTheme(localStorage.getItem('theme') === 'dark');
+    themeToggle.addEventListener('click', () => {
+      setTheme(!body.classList.contains('dark-theme'));
+    });
+  </script>
+</body>
+</html> 
